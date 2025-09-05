@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span, header {
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.top-header {
+    background-color: #0b5081;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#course-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+}
+
+nav {
+    background-color: #333;
+    color: #ffffff;
+    padding: 0.7rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
