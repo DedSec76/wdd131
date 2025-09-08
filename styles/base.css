@@ -20,10 +20,9 @@ header {
 }
 
 #course-title {
-    display: block;
     font-weight: bold;
     font-size: 1.4rem;
-    padding: 1rem 0;
+    color: #fff;
 }
 
 nav {
@@ -45,7 +44,7 @@ nav a:hover {
 }
 
 /* Main */
-main {
+main, .main-card {
     padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -71,9 +70,12 @@ main {
     width: 130px;
     border-radius: 1rem;
 }
-
-.card main figure {
-    margin-right: 1rem;
+#about-peru {
+    padding: 1rem;
+}
+.card figure {
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
     text-align: center;
     font-style: italic;
     float: left;
@@ -110,8 +112,9 @@ footer {
     color: yellow;
 }
 #name {
-    display: inline;
+    display: inline-block;
     font-size: 1.4rem;
     color: yellow;
+    padding: 1rem 0;
 }
 
