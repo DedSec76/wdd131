@@ -109,3 +109,9 @@ footer {
 #lastModified {
     color: yellow;
 }
+#name {
+    display: inline;
+    font-size: 1.4rem;
+    color: yellow;
+}
+
