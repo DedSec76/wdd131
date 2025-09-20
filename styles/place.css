@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-red: #b30000;
     --color-light-gray: #f4f4f4;
     --color-green-darker: rgb(15, 110, 15);
@@ -57,12 +57,20 @@ main img {
     margin: 1rem 0;
     padding: 1rem;
     border-bottom: 1px solid var(--color-gray-lighten);
-    
+
 }
 
-.cls-1 { fill: #231815; }
-.cls-2 { fill: #d8bf9e; }
-.cls-3 { fill: #f8b62d; }
+.cls-1 {
+    fill: #231815;
+}
+
+.cls-2 {
+    fill: #d8bf9e;
+}
+
+.cls-3 {
+    fill: #f8b62d;
+}
 
 @media (min-width: 720px) {
     .place_card {
