@@ -1,4 +1,11 @@
-
+:root{
+    --color-red: #b30000;
+    --color-light-gray: #f4f4f4;
+    --color-green-darker: rgb(15, 110, 15);
+    --color-gray-lighten: #dedede;
+    --color-white: white;
+    --principal-font: 'Roboto', sans-serif;
+}
 
 * {
     box-sizing: border-box;
@@ -7,21 +14,28 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--principal-font);
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: var(--color-light-gray);
 }
 
 /* header */
 header {
-    background-color: rgb(15, 110, 15);
+    background-color: var(--color-green-darker);
     padding-bottom: 1.5rem;
 }
 
 /* Main */
 main {
-    max-width: 800px;
-    background-color: red;
+    max-width: 1920px;
+    background-color: var(--color-red);
+}
+
+@media (min-width: 720px) {
+    main {
+        background-color: unset;
+        position: relative;
+    }
 }
 
 main img {
@@ -32,17 +46,55 @@ main img {
 
 /* Sections */
 #title {
-    color: white;
+    color: var(--color-white);
     text-align: center;
     padding: 1rem;
-    background-color: red;
+    background-color: var(--color-red);
 }
 
 .place_card {
     text-align: center;
     margin: 1rem 0;
     padding: 1rem;
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid var(--color-gray-lighten);
+    
+}
+
+@media (min-width: 720px) {
+    .place_card {
+        width: 300px;
+        background-color: var(--color-white);
+        opacity: 0.85;
+        position: absolute;
+        top: 8rem;
+        left: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .place_card h2 {
+        width: 95%;
+        background-color: var(--color-green-darker);
+        padding: 1rem;
+        margin-left: -2rem;
+        color: var(--color-white);
+        text-align: left;
+    }
+
+    .place_card:nth-last-child(2) {
+        left: auto;
+        right: 2rem;
+        top: 37rem;
+    }
+
+    .place_card:nth-last-child(2) h2::after {
+        content: "⛅";
+        font-size: 2rem;
+        float: right;
+    }
+
+    .place_card svg {
+        display: none;
+    }
 }
 
 .place_card h2 {
@@ -69,8 +121,8 @@ main img {
 /* footer */
 footer {
     margin-top: -1rem;
-    background-color: red;
-    color: white;
+    background-color: var(--color-red);
+    color: var(--color-white);
     text-align: center;
     padding: 1rem;
     position: relative;
