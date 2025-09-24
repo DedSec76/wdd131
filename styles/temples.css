@@ -52,7 +52,7 @@ header h1 {
     font-weight: bold;
 }
 
-header .icon {
+header #mobile-menu{
     font-size: 2rem;
     border: 0;
     background: none;
@@ -62,12 +62,12 @@ header .icon {
     right: 1rem;
 }
 
-.icon::before {
+#mobile-menu::before {
     content: "☰";
     cursor: pointer;
 }
 
-.icon.expand::before {
+#mobile-menu.expand::before {
     content: "❌";
 }
 

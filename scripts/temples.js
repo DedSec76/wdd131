@@ -5,7 +5,7 @@ document.getElementById("year").textContent = year;
 
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-const mobile = document.querySelector(".icon");
+const mobile = document.querySelector("#mobile-menu");
 const nav = document.querySelector("nav");
 
 mobile.addEventListener("click", () => {
