@@ -38,8 +38,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
-
-        
     }
 
     main img {
@@ -47,7 +45,7 @@
         
     }
 
-    main h1 {
+    main h2 {
         grid-column-start: 1;
         grid-column-end: 4;
     }
