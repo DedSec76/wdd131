@@ -1,0 +1,108 @@
+:root {
+    --dark-purple: rgb(81, 25, 134);
+    --white: #fff;
+    --principal-font: 'Arial';
+    --white-shadow: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--principal-font);
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+header nav a:hover {
+    background-color: var(--white-shadow);
+}
+
+.expand a {
+    display: block;
+}
+
+header span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header .icon {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: var(--white);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.icon::before {
+    content: "☰";
+    cursor: pointer;
+}
+
+.icon.expand::before {
+    content: "❌";
+}
+
+/* Main */
+main {
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+main h1 {
+    margin: 1.5rem 0;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+main figcaption {
+    margin-bottom: 1rem;
+    color: var(--dark-purple);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
