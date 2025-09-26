@@ -1,0 +1,52 @@
+:root {
+    --dark-purple: rgb(81, 25, 134);
+    --white: #fff;
+    --principal-font: 'Arial';
+    --white-shadow: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 760px) {
+    /* Header */
+    #mobile-menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        color: var(--white);
+    }
+
+    /* Main */
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    main img {
+        width: 100%;
+        
+    }
+
+    main h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
