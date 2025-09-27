@@ -1,7 +1,7 @@
 :root {
     --dark-purple: rgb(81, 25, 134);
     --white: #fff;
-    --principal-font: 'Arial';
+    --principal-font: "Roboto", sans-serif;
     --white-shadow: rgba(255, 255, 255, 0.2);
 }
 
@@ -14,7 +14,6 @@
 body {
     font-family: var(--principal-font);
     font-size: 0.8rem;
-    font-display: swap;
     line-height: 1.6;
 }
 

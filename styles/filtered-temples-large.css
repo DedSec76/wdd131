@@ -1,15 +1,3 @@
-:root {
-    --dark-purple: rgb(81, 25, 134);
-    --white: #fff;
-    --principal-font: 'Arial';
-    --white-shadow: rgba(255, 255, 255, 0.2);
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
 @media (min-width: 760px) {
     /* Header */
