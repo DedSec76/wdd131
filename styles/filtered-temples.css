@@ -87,6 +87,7 @@ main h2 {
 main img {
     width: 100%;
     height: auto;
+    margin-top: 1rem;
 }
 
 main figcaption {
@@ -95,6 +96,24 @@ main figcaption {
     font-style: italic;
     font-size: 0.9rem;
 }
+
+.container-temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+.card_temple {
+    padding: 1rem;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid #ccc;
+}
+.card_temple h3 {
+        padding-bottom: 0.3rem;
+}
+.card_temple strong {
+        color: var(--dark-purple);
+}
+
 
 /* Footer Section */
 footer {

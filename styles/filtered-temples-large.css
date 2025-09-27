@@ -35,18 +35,27 @@
 
     /* Main */
     main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-    }
-
-    main img {
-        width: 100%;
-        
+        max-width: 1200px;
     }
 
     main h2 {
         grid-column-start: 1;
         grid-column-end: 4;
     }
+
+    .container-temples {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    /*.card_temple {
+        padding: 1rem;
+        background-color: rgb(235, 235, 235);
+        border: 1px solid #ccc;
+    }
+    .card_temple h3 {
+        padding-bottom: 0.3rem;
+    }
+    .card_temple strong {
+        color: var(--dark-purple);
+    }*/
 }
