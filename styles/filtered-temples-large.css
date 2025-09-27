@@ -47,15 +47,4 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
-    /*.card_temple {
-        padding: 1rem;
-        background-color: rgb(235, 235, 235);
-        border: 1px solid #ccc;
-    }
-    .card_temple h3 {
-        padding-bottom: 0.3rem;
-    }
-    .card_temple strong {
-        color: var(--dark-purple);
-    }*/
 }

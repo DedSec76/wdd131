@@ -111,8 +111,9 @@ function createTempleCard(filteredTemples) {
     img.src = `${temple.imageUrl}`
     img.alt = `image of ${temple.templeName} temple`
     img.style.boxShadow = "1px 5px 10px black"
-    img.loading = "lazy";
-
+    img.loading = "lazy"
+    
+    //img.fetchPriority = "high"
 
     card.appendChild(title)
     card.appendChild(location)
@@ -127,8 +128,14 @@ function createTempleCard(filteredTemples) {
 // filtering and displaying the temples
 
 const old = document.getElementById("old")
+
 old.addEventListener("click", () => {
-  createTempleCard(temples.filter(temple => temple.dedicated < 1900));
+  createTempleCard(temples.filter(temple => temple.dedicated.split(",", 1) < 1900));
+})
+
+const new_t = document.getElementById("new")
+new_t.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.dedicated.split(",", 1) > 2000));
 })
 
 const large = document.getElementById("large")
@@ -141,6 +148,7 @@ small.addEventListener("click", () => {
   createTempleCard(temples.filter(temple => temple.area < 10000 ))
 });
 
+// We get the current year
 
 const year = new Date().getFullYear();
 document.getElementById("year").textContent = year;

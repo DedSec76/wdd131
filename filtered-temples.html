@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Page dedicated to temples">
     <meta name="author" content="Aldair Rutte">
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <link rel="preload" href="styles/filtered-temples.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/filtered-temples.css"></noscript>
+
+    <link rel="preload" href="styles/filtered-temples-large.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/filtered-temples-large.css"></noscript>
+
     <script src="scripts/filtered-temples.js" defer></script>
     <title>Temple Album</title>
 </head>

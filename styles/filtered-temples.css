@@ -14,6 +14,7 @@
 body {
     font-family: var(--principal-font);
     font-size: 0.8rem;
+    font-display: swap;
     line-height: 1.6;
 }
 
@@ -85,8 +86,8 @@ main h2 {
 }
 
 main img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    height: 200px;
     margin-top: 1rem;
 }
 
