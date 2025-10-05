@@ -1,0 +1,20 @@
+:root {
+    --base-color: #FFF8F1;          /*Fondo principal de la web.*/
+    --primary-color: #E3B778;       /*Botones, enlaces, íconos destacados.*/
+    --secondary-color: #8B5E3C;     /*Títulos, subtítulos, bordes, pie de página.*/
+    --accent-color: #F4CBA3;        /*Etiquetas, hover de botones o fondos suaves.*/
+    --neutro-white-color: #FFFFFF;  /*Texto principal y fondos de contraste.*/
+    --neutro-brown-color: #4A403A;
+    --pacifico-font: "Pacifico", cursive;
+    --dancing-font: "Dancing Script", cursive;
+}
+
+body {
+    background-color: var(--base-color);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--pacifico-font);
+    color: var(--neutro-brown-color);
+    text-align: center;
+}
