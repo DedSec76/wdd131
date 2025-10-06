@@ -42,6 +42,7 @@ section ul li {
 }
 #second {
     background-color: var(--secondary-color);
+    color: var(--neutro-white-color);
 }
 #accent {
     background-color: var(--accent-color);
@@ -52,6 +53,7 @@ section ul li {
 
 #brown {
     background-color: var(--neutro-brown-color);
+    color: var(--neutro-white-color);
 }
 
 #headings {
