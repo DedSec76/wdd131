@@ -25,7 +25,7 @@
                 </select></label>
         
 
-            <label>Overall Rating</label>
+            <label for="star1">Overall Rating</label>
             <div class="group-stars">
                 <label>&star;<input type="radio" id="star1" name="rating" required></label>
                 <label>&star;&star; <input type="radio" id="star2" name="rating"></label>
@@ -37,18 +37,18 @@
             <label>Date of Installation
             <input type="date" id="date-install" name="date-install" required></label>
         
-            <label>Which features did you find useful in the product? <br>(Check all that apply)</label>
+            <label for="durability">Which features did you find useful in the product? <br>(Check all that apply)</label>
 
             <label><input type="checkbox" id="durability" name="durability" value="ok">Durability</label>
             <label><input type="checkbox" id="ease" name="ease" value="ok">Ease of Use</label>
             <label><input type="checkbox" id="performance" name="performance" value="ok">Performance</label>
             <label><input type="checkbox" id="design" name="design" value="ok">Design</label>
             
-            <label>Written Review <span>(Optional)</span></label>
+            <label for="txt-review">Written Review <span>(Optional)</span></label>
             <textarea name="txt-review" id="txt-review"></textarea>
 
-            <label>Your Name <span>(Optional)</span>
-            <input type="text" id="username" name="username"></label>
+            <label for="username">Your Name <span>(Optional)</span>
+            <input type="text" id="username" name="username" autocomplete="name"></label>
 
             <input type="submit" value="Post Review">
         
